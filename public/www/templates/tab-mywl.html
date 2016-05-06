@@ -1,0 +1,16 @@
+<ion-view view-title="My WatchListt">
+	<ion-content>
+		<ion-list>
+			<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="movie in moviesRepeat" type="item-text-wrap" href="#/tab/watchlistt-movie-detail/{{movie.id}}">
+				<img ng-src="{{movie.face}}">
+				<h2>{{movie.name}}</h2>
+				<p>{{movie.resenha}}</p>
+				<i class="icon ion-chevron-right icon-accessory"></i>
+
+				<ion-option-button class="button-assertive" ng-click="remove(movie)">
+					Delete
+				</ion-option-button>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

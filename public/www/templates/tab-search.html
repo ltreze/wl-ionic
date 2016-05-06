@@ -1,0 +1,26 @@
+<ion-view view-title="Search" style="background-color:#111111;color:#DDDDCC;">
+	<ion-content class="padding" >
+		<div id="form" style="margin-left:auto;margin-right:auto;text-align:center;">
+			<h3>s</h3><!-- Search for a film to watch later -->
+			<form ng-submit="searchMovies(term)">
+				<input type="text" ng-model="term" placeholder="Ex: Batman" class="form-control" style="background-color:#CCCCCC;width: 100%;margin:8px;"/>
+				<button>Search</button>
+			</form>
+		</div>
+
+		<ion-list>
+			<ion-item class="item-remove-animate item-avatar item-icon-right wlitembusca" ng-repeat="searchResult in searchResults" type="item-text-wrap" 
+			href="#/tab/search/movie/{{searchResult.id}}">
+				<!-- <span ng-if="term.length > 4"> -->
+				<img ng-src="{{searchResult.face}}">
+				<h2>{{searchResult.name}}</h2>
+				<p>{{searchResult.resenha}}</p>
+				<i class="icon ion-chevron-right icon-accessory"></i>
+				<!-- </span> -->
+				<ion-option-button class="button-assertive" ng-click="remove(chat)">
+					Delete
+				</ion-option-button>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>
