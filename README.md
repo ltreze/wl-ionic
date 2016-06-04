@@ -1,2 +1,2 @@
-# wlrepo
-wl src
+# wl hibrid
+wl node.js
