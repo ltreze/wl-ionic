@@ -20,6 +20,6 @@
     "angular-animate": "1.4.3",
     "angular-sanitize": "1.4.3",
     "angular-ui-router": "0.2.13",
-	"facebook-connect-plugin": "https://cdn.rawgit.com/Wizcorp/phonegap-facebook-plugin/master/facebookConnectPlugin.js"
+	"facebook-connect-plugin": "https://cdn.jsdelivr.net/gh/Wizcorp/phonegap-facebook-plugin@master/facebookConnectPlugin.js"
   }
 }
